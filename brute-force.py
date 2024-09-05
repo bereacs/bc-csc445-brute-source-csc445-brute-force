@@ -32,6 +32,9 @@ class BruteForce:
         ''' Returns the number of possible routes assuming that home is one specific city'''
         count=1
         #TODO Complete this method
+         for i in range(1,self.n):
+            count=count*i
+        self.num_routes=count
 
         # print(count) # for debugging
         return (count)
